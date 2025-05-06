@@ -29,24 +29,14 @@ const Project1 = () => {
       <CoverImage src={Img1} focusX={'28%'} focusY={'70%'} />
       <Section>
         <ContentWrapper>
-          <h2>The Headline</h2>
+          <h2>A gobi project </h2>
 
           <p>
-            Sed posuere consectetur est at lobortis. Praesent commodo cursus
-            magna, vel scelerisque nisl consectetur et. Donec id elit non mi
-            porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-            commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-            sit amet risus. Cras justo odio, dapibus ac facilisis in, egestas
-            eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-            condimentum nibh, ut fermentum massa justo sit amet risus.
+            Szia Gobi minden rendben lesz:)
           </p>
 
           <p>
-            Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor
-            auctor. Sed posuere consectetur est at lobortis. Morbi leo risus,
-            porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam.
-            Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla
-            vitae elit libero, a pharetra augue.
+            random
           </p>
 
           <p>
