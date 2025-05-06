@@ -4,5 +4,5 @@ This is my personal web developer portfolio, built with [Gatsby](https://www.gat
 
 ## Live Site
 
-https://your-netlify-or-vercel-url.com
+
 
