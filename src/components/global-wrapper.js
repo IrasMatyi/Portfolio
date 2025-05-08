@@ -1,6 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import GlobalStyle from 'styles/global-style'
+import Header from 'components/header';
+
 
 const GlobalWrapper = (props) => {
   const [displayOutlines, setDisplayOutlines] = useState(false)
@@ -58,6 +60,7 @@ const GlobalWrapper = (props) => {
         <meta name="theme-color" content="#ffffff" />
       </Helmet>
       <GlobalStyle displayOutlines={displayOutlines} />
+      <Header />
       {props.children}
     </Fragment>
   )

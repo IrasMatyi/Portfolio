@@ -40,6 +40,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
   html {
     height: 100%;
     -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -49,7 +50,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
     font-feature-settings: "liga","kern";
     font-variant-ligatures: contextual common-ligatures;
     font-kerning: normal;
-    scroll-behavior: smooth;
+    
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -178,3 +179,4 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 `
 
 export default GlobalStyle
+
