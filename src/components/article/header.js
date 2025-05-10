@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components'
 import media from 'utils/media-queries'
-
 import { color } from 'styles/theme'
-
-import Header from 'components/header'
 import Icon from 'components/icons'
 
-const TitleBar = styled.div``
+const TitleBar = styled.div`
+  position: relative;
+  margin: 2rem 0;
+  padding-top: 2rem;
+`
 
 const BackArrow = styled(Link)`
   position: absolute;
@@ -20,12 +21,8 @@ const BackArrow = styled(Link)`
   ${media.sm`
     display: none;
   `};
-  &:visited {
-    color: ${color.grey900};
-  }
-  &:hover {
-    color: ${color.grey900};
-  }
+  &:visited,
+  &:hover,
   &:active {
     color: ${color.grey900};
   }
@@ -36,20 +33,15 @@ const Title = styled.div`
   text-align: center;
 `
 
-const ArticleHeader = (props) => {
-  return (
-    <Fragment>
-      <Header article />
-      <TitleBar>
-        <BackArrow to="/#projects">
-          <Icon glyph="arrow" size={64} />
-        </BackArrow>
-        <Title>
-          <h1>{props.title}</h1>
-        </Title>
-      </TitleBar>
-    </Fragment>
-  )
-}
+const ArticleHeader = ({ title }) => (
+  <TitleBar>
+    <BackArrow to="/#projects">
+      <Icon glyph="arrow" size={64} />
+    </BackArrow>
+    <Title>
+      <h1>{title}</h1>
+    </Title>
+  </TitleBar>
+)
 
 export default ArticleHeader

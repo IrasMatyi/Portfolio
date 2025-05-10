@@ -10,6 +10,7 @@ export const color = {
   grey150: '#F2F2F2',
   grey100: '#F9F9F9',
   blue500: '#007DFF',
+  primary: '#d6336c',
 }
 
 export const fontSize = {

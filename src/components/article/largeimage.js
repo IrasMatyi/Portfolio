@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Image = styled.img`
-  max-height: 500px;
+  max-height: 350px;
   display: block;
   margin-left: auto;
   margin-right: auto;

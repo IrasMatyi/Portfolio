@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import media from 'utils/media-queries'
 
 const Container = styled.div`
-  max-width: 700px;
+  max-width: 1100px;   /* increased from 700px */
   margin-left: auto;
   margin-right: auto;
   ${media.lg`
-    max-width: 600px;
+    max-width: 800px; /* increased from 600px */
   `}
 `
+
 const Content = styled.div`
   p + h3 {
     margin-top: 42px;
@@ -19,7 +20,7 @@ const Content = styled.div`
     padding: 24px 24px 26px 24px;
   `}
   ${media.xs`
-  padding: 56px 16px 26px 16px;
+    padding: 56px 16px 26px 16px;
   `}
 `
 

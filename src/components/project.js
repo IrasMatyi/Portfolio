@@ -9,6 +9,7 @@ import Logo from 'components/projectlogo'
 const ProjectWrapper = styled.div`
   margin-bottom: 100px;
   display: flex;
+  padding-left: 2rem;
   @media (max-width: 660px) {
   }
   &:last-of-type {

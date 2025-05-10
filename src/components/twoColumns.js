@@ -5,8 +5,9 @@ import media from 'utils/media-queries'
 
 const Div = styled.div`
   display: grid;
-  grid-template-columns: 100px auto;
-  justify-content: space-between;
+  grid-template-columns: 120px 1fr;  /* 🔧 Make “About” label tighter to the left */
+  gap: 3rem;
+  justify-content: start;
   width: 100%;
   ${media.md`
     grid-template-columns: auto;
@@ -14,14 +15,20 @@ const Div = styled.div`
   `}
 `
 
-const LeftColumn = styled.div``
+const LeftColumn = styled.div`
+  padding-left: 0.5rem; /* Optional: small space from edge */
+`
 
 const RightColumn = styled.div`
-  max-width: ${(props) => (props.wide ? '620px' : '544px')};
+  max-width: ${(props) => (props.wide ? '800px' : '680px')};
+  
+  margin-left: 1.5rem;  /* ✅ shifts text to the right */
   ${media.md`
-    max-width: 544px;
+    max-width: 90vw;
+    margin-left: 0; /* reset on smaller screens */
   `}
 `
+
 
 const TwoColumns = (props) => {
   return (
