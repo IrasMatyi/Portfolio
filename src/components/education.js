@@ -12,16 +12,13 @@ export default function Education() {
         <ul>
           <li>
             <strong>MSc Bioinformatics & Systems Biology</strong>,  
-            University of Amsterdam (2023–2025)
+            University of Amsterdam (Sept. 2023 – July 2025)
           </li>
           <li>
             <strong>BSc Biomedical Engineering</strong>,  
-            Budapest University of Technology (2019–2022)
+            Pazmany Peter Catholic University(Sept. 2019 – Feb. 2023)
           </li>
-          <li>
-            <strong>Machine Learning Certification</strong>,  
-            Coursera (2024)
-          </li>
+         
         </ul>
       }
     />

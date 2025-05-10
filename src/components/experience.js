@@ -13,16 +13,16 @@ export default function Experience() {
       rightColumn={
         <ul>
           <li>
-            <strong>Bioinformatics Intern</strong>,  
-            Netherlands Cancer Institute (Jan–May 2025)
+            <strong>Data Science Intern</strong>,  
+            Netherlands Cancer Institute (Aug 2024 – July 2025)
           </li>
           <li>
             <strong>Teaching Assistant</strong>,  
-            Vrije Universiteit Amsterdam (Mar–May 2025)
+            Vrije Universiteit Amsterdam (Mar – July 2025)
           </li>
           <li>
-            <strong>Data Analyst Intern</strong>,  
-            Acme Health Tech (Summer 2024)
+            <strong>Neuroscience Research and Data Analyst</strong>,  
+            Institute of experimental medicine, Budapest (Sept. 2021 - Aug. 2023)
           </li>
         </ul>
       }

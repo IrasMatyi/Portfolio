@@ -22,9 +22,8 @@ const Footer = () => {
   return (
     <Section>
       <FooterText>
-        This page is open source, Check it out on&nbsp;
-        <a href="https://github.com/gabdorf/gatsby-portfolio">Github</a>
-        <br />© {new Date().getFullYear()} John Doe
+        <a href="https://github.com/IrasMatyi/Portfolio.git">Github</a>
+        
       </FooterText>
     </Section>
   )

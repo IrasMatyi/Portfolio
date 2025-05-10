@@ -16,7 +16,7 @@ const Div = styled.div`
 `
 
 const LeftColumn = styled.div`
-  padding-left: 0.5rem; /* Optional: small space from edge */
+  padding-left: 0rem; /* Optional: small space from edge */
 `
 
 const RightColumn = styled.div`
