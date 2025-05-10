@@ -1,5 +1,8 @@
-# gatsby-portfolio
+# Iras Matyi’s Portfolio
 
-This is a template for a portfolio page built with [gatsby](https://github.com/gatsbyjs/gatsby) and [styled components](https://github.com/styled-components/styled-components).
+This is my personal web developer portfolio, built with [Gatsby](https://www.gatsbyjs.com/) and [styled-components](https://styled-components.com/).
 
-Check it out here: [demo-gatsby-portfolio.netlify.app](https://demo-gatsby-portfolio.netlify.app/)
+## Live Site
+
+
+
