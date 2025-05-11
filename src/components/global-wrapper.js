@@ -23,37 +23,37 @@ const GlobalWrapper = (props) => {
     <Fragment>
       <Helmet>
         <html lang="en" />
-        <title>John Doe</title>
-        <meta name="description" content="John Doe's projects" />
+        <title>Matyas Iras</title>
+        <meta name="description" content="Matyas Iras’s end-to-end data science & ML projects" />
         <meta
           name="keywords"
-          content="keyword1, keyword2, keyword3"
+          content="data science, machine learning, bioinformatics, React, Gatsby, portfolio"
         />
         <meta
           property="og:image"
           content="https://via.placeholder.com/250"
         />
-        <meta property="og:description" content="John Doe's projects" />
+        <meta property="og:description" content="Matyas Iras's projects" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://johndoe.com" />
-        <meta property="og:title" content="John Doe" />
+        <meta property="og:url" content="https://matyas-iras.netlify.app" />
+        <meta property="og:title" content="Matyas Iras" />
 
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/MI-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/MI-icon.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/MI-icon.png"
         />
         <link rel="manifest" href="/manifest.json" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
