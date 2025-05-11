@@ -47,7 +47,7 @@ const GlobalWrapper = ({ children }) => {
         />
 
         {/* Favicon (your MI icon must live at static/favicon.ico)j */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/MI-icon.png" />
       </Helmet>
 
       <GlobalStyle displayOutlines={displayOutlines} />
