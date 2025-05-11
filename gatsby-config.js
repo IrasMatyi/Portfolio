@@ -1,3 +1,4 @@
+// gatsby-config.js
 const path = require('path')
 
 module.exports = {
@@ -6,20 +7,25 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-root-import',
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        src: path.join(__dirname, 'src'),
-        components: path.join(__dirname, 'src/components'),
-        fonts: path.join(__dirname, 'src/fonts'),
-        img: path.join(__dirname, 'src/img'),
-        layouts: path.join(__dirname, 'src/layouts'),
-        pages: path.join(__dirname, 'src/pages'),
-        styles: path.join(__dirname, 'src/styles'),
-        utils: path.join(__dirname, 'src/utils'),
+        name: `Matyas Iras Portfolio`,
+        short_name: `Portfolio`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        // point this at your new favicon in static/
+        icon: `static/MI-icon.png`,
       },
     },
+    // …the rest of your plugins
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-root-import`,
+      options: { /* … */ },
+    },
   ],
 }

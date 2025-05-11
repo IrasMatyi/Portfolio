@@ -39,14 +39,14 @@ const GlobalWrapper = ({ children }) => {
         <meta property="og:title"       content="Matyas Iras • Data Science Portfolio" />
         <meta
           property="og:description"
-          content="Explore my projects in data science, ML & full-stack development."
+          content="Explore my projects in data science, ML and bioinformatics"
         />
         <meta
           property="og:image"
           content="https://matyas-iras.netlify.app/og-image.png"
         />
 
-        {/* Favicon (your MI icon must live at static/favicon.ico) */}
+        {/* Favicon (your MI icon must live at static/favicon.ico)j */}
         <link rel="icon" href="/favicon.ico" />
       </Helmet>
 
