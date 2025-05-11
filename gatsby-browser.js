@@ -1,4 +1,5 @@
 // gatsby-browser.js
+
 export const onRouteUpdate = ({ location, prevLocation }) => {
   if (location.hash) {
     // small timeout ensures the DOM node is mounted

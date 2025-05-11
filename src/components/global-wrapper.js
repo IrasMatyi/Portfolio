@@ -1,67 +1,58 @@
+// src/components/global-wrapper.js
 import React, { Fragment, useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import GlobalStyle from 'styles/global-style'
-import Header from 'components/header';
+import Header from 'components/header'
 
-
-const GlobalWrapper = (props) => {
+const GlobalWrapper = ({ children }) => {
   const [displayOutlines, setDisplayOutlines] = useState(false)
 
-  const handleKeyboardInput = (e) => {
-    const key = e.keyCode || e.charCode
-    // Tab
-    if (key === 9) {
-      setDisplayOutlines(true)
-    }
-  }
-
   useEffect(() => {
-    window.addEventListener('keydown', (e) => handleKeyboardInput(e))
-  })
+    const onKey = (e) => {
+      if ((e.keyCode || e.charCode) === 9) {
+        setDisplayOutlines(true)
+      }
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [])
 
   return (
     <Fragment>
       <Helmet>
         <html lang="en" />
-        <title>Matyas Iras</title>
-        <meta name="description" content="Matyas Iras’s end-to-end data science & ML projects" />
+
+        {/* Page title & meta */}
+        <title>Matyas Iras • Data Science Portfolio</title>
+        <meta
+          name="description"
+          content="End-to-end data science & machine learning projects by Matyas Iras"
+        />
         <meta
           name="keywords"
           content="data science, machine learning, bioinformatics, React, Gatsby, portfolio"
         />
+
+        {/* Open-Graph for social previews */}
+        <meta property="og:type"        content="website" />
+        <meta property="og:url"         content="https://matyas-iras.netlify.app" />
+        <meta property="og:title"       content="Matyas Iras • Data Science Portfolio" />
+        <meta
+          property="og:description"
+          content="Explore my projects in data science, ML & full-stack development."
+        />
         <meta
           property="og:image"
-          content="https://via.placeholder.com/250"
+          content="https://matyas-iras.netlify.app/og-image.png"
         />
-        <meta property="og:description" content="Matyas Iras's projects" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://matyas-iras.netlify.app" />
-        <meta property="og:title" content="Matyas Iras" />
 
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/MI-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/MI-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/MI-icon.png"
-        />
-        <link rel="manifest" href="/manifest.json" />
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-        <meta name="theme-color" content="#ffffff" />
+        {/* Favicon (your MI icon must live at static/favicon.ico) */}
+        <link rel="icon" href="/favicon.ico" />
       </Helmet>
+
       <GlobalStyle displayOutlines={displayOutlines} />
       <Header />
-      {props.children}
+      {children}
     </Fragment>
   )
 }
