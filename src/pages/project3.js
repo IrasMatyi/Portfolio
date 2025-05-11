@@ -10,7 +10,7 @@ import Footer from 'components/footer'
 import TwoImage from 'components/article/twoimage'
 
 // Import images for Project 3
-import CoverImg from 'img/articles/project3/hotel1.webp'
+import CoverImg from 'img/articles/project3/hotel1.jpg'
 import TargetDistribution from 'img/articles/project3/target_distr.png'
 import CorrPlot from 'img/articles/project3/corr_plot.png'
 //import FeatureImportance from 'img/articles/project3/figure4_feature_importance.png'
